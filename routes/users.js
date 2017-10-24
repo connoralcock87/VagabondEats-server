@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const knex = require('../db/knex');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
