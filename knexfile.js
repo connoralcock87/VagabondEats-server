@@ -7,7 +7,7 @@ module.exports = {
      host: '127.0.0.1',
      user: 'root',
      password: 'password',
-     database: '<foodTruck_db>',
+     database: 'foodTruck_db',
      charset: 'utf8'
     }
   },
