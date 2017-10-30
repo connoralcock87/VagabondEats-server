@@ -1,7 +1,7 @@
 const knex = require('./knex'); //connection
 
 module.exports = {
-  getAll() {
+  getAll: function () {
     return knex('*').from('truck');
-  },
+  }
 };

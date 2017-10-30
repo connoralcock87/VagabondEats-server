@@ -1,9 +1,12 @@
-var express = require('express');
-var router = express.Router();
-const knex = require('../db/knex');
+const express = require('express');
+const router = express.Router();
+const queries = require('../db/queries');
+const bodyParser = require('body-parser');
+
+require('dotenv').config();
 
 /* GET home page. */
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   queries.getAll()
     .then(truck => {
       res.json(truck)
