@@ -3,8 +3,11 @@ var router = express.Router();
 const knex = require('../db/knex');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function(req, res) {
+  queries.getAll()
+    .then(truck => {
+      res.json(truck)
+    });
 });
 
 module.exports = router;
