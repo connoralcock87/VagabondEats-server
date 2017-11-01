@@ -99,7 +99,7 @@ exports.seed = function(knex, Promise) {
       id: 14,
       truck_id: 13,
       location_id: 2,
-      day: 'Tuesday',
+      day: 'Saturday',
       startTime: '12:00:00',
       endTime: '21:00:00'
     }, {

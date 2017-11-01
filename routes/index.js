@@ -6,10 +6,17 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 /* GET home page. */
+// router.get('/', (req, res) => {
+//   queries.getAll()
+//     .then(truck => {
+//       res.json(truck)
+//     });
+// });
+
 router.get('/', (req, res) => {
-  queries.getAll()
-    .then(truck => {
-      res.json(truck)
+  queries.getSchedule()
+    .then(schedule => {
+      res.json(schedule)
     });
 });
 
