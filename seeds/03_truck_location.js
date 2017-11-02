@@ -403,6 +403,13 @@ exports.seed = function(knex, Promise) {
       day: 'Sunday',
       startTime: '16:00:00',
       endTime: '22:00:00'
+    }, {
+      id: 58,
+      truck_id: 21,
+      location_id: 11,
+      day: 'Tuesday',
+      startTime: '16:00:00',
+      endTime: '22:00:00'
     }];
 
     return knex('truck_location').insert(truckLocations);

@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.text('coordinates');
     table.text('name');
+    table.text('address');
   });
 };
 
